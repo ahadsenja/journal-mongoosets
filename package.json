@@ -1,0 +1,14 @@
+{
+  "name": "journal-mongoosets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ahadsenja",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^6.0.11"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "typescript": "^4.4.4"
+  }
+}
