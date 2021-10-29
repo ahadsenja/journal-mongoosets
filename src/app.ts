@@ -1,6 +1,8 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 
+import userRoutes from './routers/user/user.routes';
+
 class App {
   public app: Application;
 
@@ -17,7 +19,9 @@ class App {
   protected routes(): void {
     this.app.route('/').get((req: Request, res: Response) => {
       res.send('Hi from typescript mongoose')
-    })
+    });
+
+    this.app.use('/api/v1/users', userRoutes);
   }
 }
 
